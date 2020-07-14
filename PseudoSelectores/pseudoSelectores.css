@@ -1,0 +1,19 @@
+/* PSEUDO SELECTORES 
+Podriamos darle un estilo a las etiquetas, por ejemplo botones, o condiciones
+para indicar estados como pasando el mousse por arriba, o que determinada
+parte tenga una fuente disitnta.
+
+1 - PSEUDO SELECTOR: HOVER - QUEREMOS QUE LOS INPUT CAMBIEN DE COLOR CUANDO EL CURSOR
+PASA POR ENCIMA. PSEUDO SELECTOR HOVER  
+2 - PSEUDO SELECTOR: FOCUS - CAMBIARA DE COLOR CUANDO EL USUARIO LO PRESIONE PARA COMPLETAR
+*/
+
+input:hover {
+    background-color: pink;
+    /*- 1 - cambiara el color cuando el usuario pase por encima el cursor*/
+}
+
+input:focus {
+    background-color: red;
+    /*- 2 - */
+}

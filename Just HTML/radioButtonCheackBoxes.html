@@ -1,0 +1,49 @@
+<!-- Radio buttons and Check Boxes 
+
+Son los circulos o cuadrados con los que puede interactuar el usuario
+
+El radio button se configura poniendo la pregunta o consigna en LABEL
+y se le pone de atributo type=radio en el INPUT, name será el nombre 
+que indiquemos. Para agregar mas opciones simplemente debemos 
+copiar la misma linea de input y agregarla por debajo intercambiando
+la opcion anteior por otra.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formularios1.html" method="get">
+        <br><label for="email">Email</label>
+        <br><input type="text" id="email" name="email">
+
+        <br><label for="">¿Fuiste al cine este año?</label>
+        <br><input type="radio" name="cine" value="S">Si
+        <br><input type="radio" name="cine" value="N" checked >No
+<!--!!!!!!!! NECESARIAMENTE LAS RESPUESTAS DEBEN TENER EL MISMO NAME PARA QUE
+UNICAMENTE PODAMOS ELEGIR UNA O LA OTRA. DE LO CONTRARIO PODRIAMOS
+ELEGIR AMBAS NO SIENDO FUNCIONAL LA RESPUESTA.
+    !!!!!!!!Lo que llega de la respuesta no es ni si ni no por lo que
+habria que agregarle el ATRIBUTO VALUE=S (por si) N (por no)
+
+SI QUEREMOS QUE POR DEFECTO APAREZCA UNA OPCION MARCADA TANTO EN EL RADIO
+BUTTON COMO EN EL CHECKBOX DEBEMOS AGREGARLE EL ATRIBUTO SIN VALOR LLAMADO
+checked//////
+
+A CONTINUACION CHECKBOX -->
+
+<br><label for="">Generos de cine preferidos</label>
+<br><input type="checkbox" name="genero" value="terror" checked>Terror
+<br><input type="checkbox" name="genero" value="accion">Accion
+<br><input type="checkbox" name="genero" value="drama">Drama
+
+<br><label for="password">Contraseña</label>
+<br><input type="password" id="password" name="password">
+
+<br><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

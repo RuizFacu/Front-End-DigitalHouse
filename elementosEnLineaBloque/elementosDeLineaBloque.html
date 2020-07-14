@@ -1,0 +1,60 @@
+<!--Como hacer que los elementos de HTML y CSS tengan estilo y combinen para 
+crear estas cajas. 
+Para ellos hay que acomdarlo en cajas y subcajas.
+
+Cajas de lineas son aquellas que ocupan el espacio exacto que ocupa
+su contenido por ejemplo las imagenes y los hipervinculos
+
+Las cajas de bloque son aquellas que apriori ocupan el 100% del ancho
+e implican un salto de linea. 
+
+cajas de linea = etiqueta <span> REMARCA CONTENIDO Y LO SEPARA DEL RESTO
+cajas de bloque = etiqueta <div></div> (parrafos/titulos)
+
+Porque ocupan o no todo el ancho, es porque las cajas de HTML cuentan
+con una propiedad de CSS que es DISPLAY, si esta propiedad esta bloqueada
+quiere decir que ocupara todo el ancho o no.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="elementosDeLinea.Bloque.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--EL HEADER REEMPLAZA AL DIV y LE DA UN SIGNIFICADO ADICIONAL
+    YA QUE ES LA CABECERA-->
+    <header class="caja1">CAJA 1</header>
+<br>
+     <!--LA ETIQUETE SECTION INDICA QUE LO QUE ESTE DENTRO DE ESTA CAJA
+    TENDRAN COSAS EN COMUN COMO ARTICULOS-->
+    <section class="caja2">
+        <article>APPLE IPHONE 11 PRO MAX</article>
+        <article>APPLE IPAD PRO</article>
+        <article>APPLE IPHONE XS MAX</article>
+    </section>
+<br>
+    <span class="caja4"> PRIMER ETIQUETA EN LINEA, NO REMARCA TODO EL ANCHO, SOLO SU CONTENIDO</span>
+     <!--LA ETIQUETA FOOTER PUEDE REEMPLAZAR TAL DIV-->
+    <footer class="caja3">CAJA 3</footer>
+<br>
+    <h2>EJERCICIO 3 PLAYGROUND</h2>
+<br>
+    <div class="div-arriba">Soy un div y soy un elemento de bloque.</div>
+    <span class="span-grande">Yo soy un span y ocupo sólo el ancho de mi contenido.</span>
+    <span class="span-chiquito">Yo soy un span más chiquito.</span>
+    <span>Yo minúsculo</span>
+    <div class="div-abajo">No se olviden de mí que también soy un div.</div>
+</body>
+</html>
+
+<!--ETIQUETAS EN LINEA:
+IMG SPAN A BUTTON INPUT 
+
+-->
+
+<!--ETIQUETAS EN BLOQUE (OCUPAN TODO EL ANCHO EN PRINCIPIO, 
+    ADEMAS IMPLICAN UN SALTO DE LINEA):
+<div>, <p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <ul>, <ol>, <li>, <form>, <header>, <footer>, <section>, <article>.-->

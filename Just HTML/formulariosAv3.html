@@ -1,0 +1,62 @@
+<!--Hay mas etiquetas que nos permiten ser mas interactivos
+
+Botones con opciones
+Recuadros para texto
+Button -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pseudoSelectores.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formularios1.html" method="get">
+        <br><label for="email">Email</label>
+        <br><input type="text" id="email" name="email">
+    <br>
+        <br><label for="">¿Fuiste al cine este año?</label>
+        <br><input type="radio" name="cine" value="S">Si
+        <br><input type="radio" name="cine" value="N" checked >No
+    <br>
+        <br><label for="">Generos de cine preferidos</label>    
+        <br><input type="checkbox" name="genero" value="terror" checked>Terror
+        <br><input type="checkbox" name="genero" value="accion">Accion
+        <br><input type="checkbox" name="genero" value="drama">Drama
+    <br>
+        <!---En lugar de input type select usamos directamente
+        la etiqueta select
+        Luego con la etiqueta option ponemos cada opcion del boton-->
+        <br><label for="">Seleccione un país:</label>
+        <br><select name="país" id="">
+            <option value="AR">Argentina</option>
+            <option value="NZ">Nueva Zelanda</option>
+            <option value="CD">Canada</option>
+        </select>
+    <br>
+        <!--- Recuadro para texto. Col indica cuantos caracteres uno al lado del
+        otro entran por linea. El atributo rows controla el alto (cantidad
+        de enters-->
+        <br><label for="">Dejanos su comentario</label>
+        <br><textarea name="comentario" id="" cols="50" rows="7"></textarea>
+    <br>
+        <br><label for="password">Contraseña</label>
+        <br><input type="password" id="password" name="password">
+    <br>
+        <br><input type="submit" value="Enviar">
+    <br>
+        <!--Con la etiqueta BUTTON podremos al igual que con el input
+        de tipo submit crear un boton, pero este se destaca ya que
+        permitirá incluir un boton con algun icono o imagen El type
+        de button debe ser al igual que el input de boton SUBMIT.-->
+        <br><button type="submit">Enviar el formulario</button>
+    <br>
+        <!--Este es un boton para poder borrar todo el formulario
+        El type de este button sera reset. -->
+        <br><button type="reset">Limpiar campos</button>
+    </form>
+</body>
+</html>

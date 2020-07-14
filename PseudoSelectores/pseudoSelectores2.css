@@ -1,0 +1,25 @@
+/* Este pseudo selector nos permitira cambiar unicamente una de las tantas etiquetas identicas, en este caso P.
+
+Hijos directo del body segun el numero de etiquete que sea en renglon
+Si tengo h1 , p , h2 , p , h3, la posicion como hijo directo del
+body de h2 será 3*/
+
+body p:nth-child(3) {
+    background-color: yellow;
+}
+
+body h1:nth-child(5) {
+    background-color: green;
+}
+
+/* PARA QUE FUNCIONE DEBE COINCIDIR LA ETIQUETAS CON LA POSICION INDICADA POR POR EL PSEUDO SELECTOR NTH-CHILD*/
+
+/*si queremos afectar por ejemplo a las hijas p pares, como parametro del nth-child debemos utilizar la palabra ODD y si queremos las pares la palabra EVER*/
+
+body p:nth-child(even) {
+    font-size: 32px;
+}
+
+body p:nth-child(even) {
+    background-image: url("ejercicio1clase1/img/burningKL.jpeg");
+}

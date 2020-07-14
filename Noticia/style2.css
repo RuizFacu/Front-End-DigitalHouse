@@ -1,0 +1,24 @@
+.MODIFICACION {
+text-decoration: underline;
+color: #FFFF7D;
+
+}
+body {
+    background-image: url("got.jpg");
+    Background-repeat: no-repeat
+}
+h1.MODIFICACION {
+    font-family: Arial;
+}
+
+h3 {
+    color: red;
+}
+
+ul li {
+    color: yellow
+}
+
+ol li {
+    font-family: Helvetica;
+}

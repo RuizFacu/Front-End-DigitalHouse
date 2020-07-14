@@ -1,0 +1,47 @@
+/*Generales <body>
+★ Familia tipográfica: Verdana, Geneva, sans-serif
+★ Tamaño de fuente: 18px
+★ Ancho: 900px
+Título principal <h1>
+★ Tamaño de fuente: 37px
+★ Interlineado: 46px
+★ Familia tipográfica: tahoma, Helvetica, sans-serif
+★ Color: #000000
+Títulos secundarios <h2>
+★ Tamaño de fuente: 25px
+★ Interlineado: 38px
+★ Familia tipográfica: tahoma, Helvetica, sans-serif
+Bajada de título <h3>
+★ Tamaño de fuente: 18px
+★ Color: #666*/
+
+*{
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 37px;
+    line-height: 46px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000
+}
+h2 {
+    font-size: 25px;
+    line-height: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+    font-size: 18px;
+    color: #666;
+}
+
+body {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 900px;
+    text-align: justify;
+}
+
+img {
+    align-content: center;
+}

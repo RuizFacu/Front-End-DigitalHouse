@@ -1,0 +1,54 @@
+<!--Veremos FORMULARIOS PARTE 1
+Un formulario nos permite como usuarios ingresar 
+informacion. 
+
+Su etiqueta es la form
+ATRIBUTOS: 
+action="ruta" 
+method="get/post"
+
+PARA PONER UN TITULO DENTRO DEL FORMULARIO PODREMOS UTILIZAR LAS 
+ETIQUETAS LABEL
+
+Tambien utilizaremos para cada casillero LA ETIQUETA INPUT
+En ella siempre deberemos contar con tres ATRIBUTOS:
+1 - type="text" El tipo de dato que se ingresara si es texto o lo que sea,
+2 - id="" Le otorgamos esta diferenciacion para luego poder mantener
+cierta unicidad de criterio en los distintos datos de forma visual
+para el usuario
+3 - name="" Será el nombre que indique QUE dato es el que llego. Que todos
+los datos tengan el atributo completado name es una buena practica
+para poder tener en cuenta de QUE dato estamos hablando
+
+Una vez que tengo el atributo ID y el NAME del input podemos completar 
+el atributo for de label para que el usuario al presionar en el sitio
+el nombre email le permita completar el campo, es un ATAJO para 
+el usuario
+
+Cuando creamos el campo CONTRASEÑA debemos recordar de en input en el atributo 
+type="password" para que figure cifrada
+
+EL INPUT SUBMIT SERÁ EL BOTON DE ENVIAR. Debemos agregarle al INPUT 
+el atributo VALUE="Enviar"
+
+LA ETIQUETA INPUT NO TIENE CIERRE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formularios1.html" method="get">
+        <p><label for="email">Email</label></p>
+        <p><input type="text" id="email" name="email"></p>
+
+        <p><label for="password">Contraseña</label></p>
+        <p><input type="password" id="password" name="password"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

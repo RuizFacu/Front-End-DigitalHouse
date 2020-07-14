@@ -1,0 +1,52 @@
+/* CAJAS UNA AL LADO DE LA OTRA
+FORMAS DE HACERLO 
+LA MAS SENCILLA. PARA ESO NECESITAMOS
+QUE FLOTE LA CAJA
+
+float left, float left
+
+Lo que pasa al hacer esto es que el elemento de abajo interpreta
+que la caja(elemento flotante) superior no esta mas y toma su lugar
+¿Como solucionar esto?
+1. float left
+2. contener la flotacion]: DIV PADRE con una propiedad: 
+OVERFLOW:HIDDEN (((( SIEMPREEEEEEEEEEEEEE!!!!!!!!!!))))))))).
+
+CLEAR: BOTH ARREGLA LO QUE ESTA ALREDEDOR DE ALGO NO AFECTADO POR EL FLOAT.
+
+NOTA:
+width: 80% (menor al 100%)
+margin: 0 auto (con un width menor al 100, centra los elementos o cajas) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+section article {
+    width: 33%;
+    float: left;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.art1 {
+    background-color: burlywood;
+}
+
+.art2 {
+    background-color: coral;
+}
+
+.art3 {
+    background-color: cornflowerblue;
+}
+
+footer {
+    clear: both;
+}
